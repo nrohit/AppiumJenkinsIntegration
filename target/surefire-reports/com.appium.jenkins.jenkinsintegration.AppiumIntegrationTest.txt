@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.appium.jenkins.jenkinsintegration.AppiumIntegrationTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 34.638 sec - in com.appium.jenkins.jenkinsintegration.AppiumIntegrationTest
