@@ -1,4 +1,4 @@
-package com.appium.jenkins.appiumserver;
+package com.appium.jenkins.jenkinsintegration;
 import java.io.IOException;
 
 import org.apache.commons.exec.CommandLine;

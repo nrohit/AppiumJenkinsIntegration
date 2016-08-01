@@ -10,8 +10,6 @@ import java.util.concurrent.TimeUnit;
 import org.junit.Test;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
-import com.appium.jenkins.appiumserver.AppiumServer;
-
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
 
