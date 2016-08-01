@@ -18,8 +18,6 @@ public class AppiumIntegrationTest {
 	@Test
 		public void testLaunch() throws InterruptedException, IOException {
 			DesiredCapabilities cap = new DesiredCapabilities();
-			new AppiumServer().stopAppium();
-			new AppiumServer().startAppium();
 			cap.setCapability(MobileCapabilityType.AUTOMATION_NAME, "Appium");
 			cap.setCapability(MobileCapabilityType.PLATFORM_NAME, System.getProperty("PlatformName"));
 			cap.setCapability(MobileCapabilityType.PLATFORM_VERSION, System.getProperty("PlatformVersion"));
