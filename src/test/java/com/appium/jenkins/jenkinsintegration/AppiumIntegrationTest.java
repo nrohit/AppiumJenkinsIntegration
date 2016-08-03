@@ -7,6 +7,9 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.exec.ExecuteException;
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
 import org.junit.Test;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
@@ -14,6 +17,11 @@ import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
 
 public class AppiumIntegrationTest {
+	
+	@BeforeClass
+	public void startAppiumServer() throws ExecuteException, IOException, InterruptedException{
+		new AppiumServer().startAppium();
+	}
 
 	@Test
 		public void testLaunch() throws InterruptedException, IOException {
@@ -30,5 +38,10 @@ public class AppiumIntegrationTest {
 			new AppiumServer().adbPermisions();
 			Thread.sleep(20000);
 		}
+	
+	@AfterClass
+	public void stopAppiumServer() throws IOException{
+		new AppiumServer().stopAppium();
+	}
 	}
 
